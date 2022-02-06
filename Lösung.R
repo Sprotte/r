@@ -139,29 +139,29 @@ ggplot(count.data, aes(x = "", y = prop, fill = class)) +
 
 ggplot(df, aes(x = HE))  
 
-#with outliners
-#boxplot(df$HE, main="Verteilung der Haushaltseinkommen")
-
-#filter outliers
+#filter HE outliers
 outliers_he <- boxplot(df$HE)$out
 #drop the rows containing outliers
 df_he_no_outliners <- df[-c(which(df$HE %in% outliers_he)),]
 #boxplot without outliers
 boxplot(df_he_no_outliners$HE, main="Verteilung der Haushaltseinkommen")
-
 #with outliners
-#boxplot(df$vSM, main="Vorzeitige Sterblichkeit Männer (Todesfälle pro 1000 EW bei unter 70 Jahren)")
+#boxplot(df$HE, main="Verteilung der Haushaltseinkommen")
 
-#filter outliers
+
+#filter vSM outliers
 outliers_vSM <- boxplot(df$vSM)$out
 #drop the rows containing outliers
 df_vSM_no_outliners <- df[-c(which(df$vSM %in% outliers_vSM)),]
 #boxplot without outliers
 boxplot(df_vSM_no_outliners$vSM, main="Vorzeitige Sterblichkeit Männer (Todesfälle pro 1000 EW bei unter 70 Jahren")
+#with outliners
+#boxplot(df$vSM, main="Vorzeitige Sterblichkeit Männer (Todesfälle pro 1000 EW bei unter 70 Jahren)")
+
+# Punktestreuungsdiagramm (4. Aufgabe)
 
 #drop the rows containing outliners vSM from the data which already removed outliners df
 df_no_outliners <- df_he_no_outliners[-c(which(df_he_no_outliners$vSM %in% outliers_vSM)),]
-# Punktestreuungsdiagramm (4. Aufgabe)
 
 ggplot(df_no_outliners) + geom_point(aes(HE, vSM)) +                                      # Erstellen Streudiagramm
   xlab("Haushaltseinkommen 2017 (€)") +
@@ -195,7 +195,7 @@ kreise_xls <- readxl::read_excel("C:/Users/MrFinch/Desktop/903252_Mathematische 
                                  skip = 2,                                                                                        
                                  sheet = 1,                                                                                       
                                  col_names = T) 
-                                c( "krs17", "krs17name")
+c( "krs17", "krs17name")
 
 
 
