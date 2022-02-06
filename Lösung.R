@@ -14,22 +14,21 @@ library(sp)                                   # räuml. Daten
 library(sf)                                   # shape-Dateien einlesen
 library(raster)                               # Datenaquise
 library(tmap)                                 # zum Erstellen von thematischen Karten
-library(ggrepel)                              # package zur vermeidung von überlappenden Beschriftungen
-
+library(ggrepel)                              # package zur vermeidung von überlappenden Beschriftunge
 # 1. Daten einlesen und als dataframe konvertieren (Aufgabe 1)
 
 # Einlesen der csv-Tabelle
 
-Tabelle <- readr::read_lines("C:/Users/MrFinch/Desktop/903252_Mathematische Methoden/HE_vSM.csv")
+Tabelle <- readr::read_lines("./Data/HE_vSM.csv")
 
 # Bearbeiten der Tabelle
 
 Tabelle <- Tabelle[-2]                                                                            # löschen der 2. Zeile, da unbrauchbar
 Tabelle <- gsub( '"', '', Tabelle)                                                                # sucht und entfernt " 
 
-readr::write_lines( x = Tabelle, file = "903252.csv")                                             # neue CSV-Datei gespeichert
+readr::write_lines( x = Tabelle, file = "./Data/903252.csv")                                             # neue CSV-Datei gespeichert
 
-tibble <- read_delim("903252.csv",                                                                # importiert CSV als tibble
+tibble <- read_delim("./Data/903252.csv",                                                                # importiert CSV als tibble
                      delim = ";",                                                                 # Trennzeichen
                      skip = 1,                                                                    # Überspringt 1. Zeile (Kopfzeile)
                      col_names = c("Nr.", "Kreis/Region", "Aggregat", "HE", "vSM"),               # Spaltennamen in genannter Reihenfolge
@@ -191,7 +190,7 @@ summary(Regressionsmodell)                                                      
 
 #5. Verknüpfung mit Geometriedaten----
 # Einlesen der Excel-Datei
-kreise_xls <- readxl::read_excel("C:/Users/MrFinch/Desktop/903252_Mathematische Methoden/Kreisgrenzen/VG250_Kreisgrenzen.xlsx",
+kreise_xls <- readxl::read_excel("./Data/Kreisgrenzen/VG250_Kreisgrenzen.xlsx",
                                  skip = 2,                                                                                        
                                  sheet = 1,                                                                                       
                                  col_names = T) 
@@ -199,7 +198,7 @@ c( "krs17", "krs17name")
 
 
 
-Gemeinde_sf <- sf::st_read("C:/Users/MrFinch/Desktop/903252_Mathematische Methoden/Kreisgrenzen/Kreisgrenzen_neu/vz250_0101/VZ250_GEM.shp")
+Gemeinde_sf <- sf::st_read("./Data/Kreisgrenzen/Kreisgrenzen/Kreisgrenzen_neu/vz250_0101/VZ250_GEM.shp")
 
 tmap_mode("plot")
 
