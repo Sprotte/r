@@ -22,11 +22,11 @@ library(ggrepel)
 
 # Einlesen der csv-Tabelle
 
-Tabelle <- readr::read_lines("./DData/903252.xlsx")
+Tabelle <- readr::read_lines("./Data/903252.xls")
 
 # Bearbeiten der Tabelle
 
-Tabelle <- Tabelle[-2]                                                                            # löschen der 2. Zeile, da unbrauchbar
+Tabelle <- Tabelle[-1]                                                                            # löschen der 2. Zeile, da unbrauchbar
 Tabelle <- gsub( '"', '', Tabelle)                                                                # sucht und entfernt " 
 
 readr::write_lines( x = Tabelle, file = "./Data/903252.csv")                                             # neue CSV-Datei gespeichert
@@ -47,7 +47,7 @@ as.data.frame(tibble)
 is.data.frame(tibble)                                                                             # Überprüfung -> TRUE
 
 df <- tibble
-saveRDS( df, file = "903252.rds")
+saveRDS( df, file = "./DataOut/903252.rds")
 
 # Überprüfen der Korrelation
 
@@ -201,12 +201,12 @@ summary(Regressionsmodell)                                                      
 
 #5. Verknüpfung mit Geometriedaten----
 # Einlesen der Excel-Datei
-kreise_xls <- readxl::read_excel("./Data/Kreisgrenzen/VG250_Kreisgrenzen.xlsx",
+kreise_xls <- readxl::read_excel("./Data/VG250_Kreisgrenzen.xlsx",
                                  skip = 1,                                                                                        
                                  sheet = 1,                                                                                       
                                  col_names = T) 
 
-Gemeinde_sf <- sf::st_read("./Data/Kreisgrenzen/VG250_KRS_2021.shp")
+Gemeinde_sf <- sf::st_read("./Shapes/Kreisgrenzen/VG250_KRS_2021.shp")
 
 tmap_mode("plot")
 
@@ -220,7 +220,7 @@ Kreis_sf <- Gemeinde_sf %>%                                                 # Ei
   dplyr::group_by( ARS, GEN) %>%                              # Gruppierung ... übergeben an
   dplyr::summarize(Gemeinden = n())                               # Zusammenfassung ... übergeben an <-
 
-saveRDS( Kreis_sf, "Kreise_sf.rds")
+saveRDS( Kreis_sf, "./DataOut/Kreise_sf.rds")
 
 tmap_mode("view")
 
@@ -236,7 +236,7 @@ Kreisdata_sf <- merge( x = Kreis_sf,
                        y = df,
                        by.x =  "ARS",
                        by.y = "Nr.")
-saveRDS( Kreisdata_sf, "Kreisdata_sf.rds")
+saveRDS( Kreisdata_sf, "./DataOut/Kreisdata_sf.rds")
 
 head( Kreisdata_sf)
 
