@@ -1,6 +1,5 @@
 Nr.;Kreis/Region;Aggregat;HE;vSM
-;;;2017,00;2017
-1001;Flensburg, Stadt;kreisfreie Stadt;1509,80;3,87
+1001;Flensburg, Stadt;kreisfreie Stadt;1509,8;3,87
 1002;Kiel, Stadt;kreisfreie Stadt;1544,33;3,53
 1003;Lübeck, Stadt;kreisfreie Stadt;1639,28;4,48
 1004;Neumünster, Stadt;kreisfreie Stadt;1546,79;4,85
@@ -19,7 +18,7 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 3101;Braunschweig, Stadt;kreisfreie Stadt;1821,83;3,38
 3102;Salzgitter, Stadt;kreisfreie Stadt;1594,09;4,64
 3103;Wolfsburg, Stadt;kreisfreie Stadt;1961,16;3,95
-3151;Gifhorn;Landkreis;1899,00;3,61
+3151;Gifhorn;Landkreis;1899;3,61
 3153;Goslar;Landkreis;1708,68;5,03
 3154;Helmstedt;Landkreis;1866,81;4,86
 3155;Northeim;Landkreis;1790,64;4,73
@@ -34,13 +33,13 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 3256;Nienburg (Weser);Landkreis;1734,32;4,38
 3257;Schaumburg;Landkreis;1781,62;4,4
 3351;Celle;Landkreis;1693,78;3,98
-3352;Cuxhaven;Landkreis;1830,80;4,75
+3352;Cuxhaven;Landkreis;1830,8;4,75
 3353;Harburg;Landkreis;2083,68;2,97
 3354;Lüchow-Dannenberg;Landkreis;1702,76;6,02
 3355;Lüneburg;Landkreis;1736,42;3,46
 3356;Osterholz;Landkreis;1878,66;3,98
 3357;Rotenburg (Wümme);Landkreis;1853,83;4,17
-3358;Heidekreis;Landkreis;1733,70;3,75
+3358;Heidekreis;Landkreis;1733,7;3,75
 3359;Stade;Landkreis;1877,79;3,29
 3360;Uelzen;Landkreis;1724,03;4,7
 3361;Verden;Landkreis;1917,84;3,64
@@ -73,9 +72,9 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 5120;Remscheid, Stadt;kreisfreie Stadt;1842,46;3,76
 5122;Solingen, Stadt;kreisfreie Stadt;1896,12;3,82
 5124;Wuppertal, Stadt;kreisfreie Stadt;1721,89;3,97
-5154;Kleve;Landkreis;1680,70;3,91
+5154;Kleve;Landkreis;1680,7;3,91
 5158;Mettmann;Landkreis;2049,99;3,49
-5162;Rhein-Kreis Neuss;Landkreis;2033,80;3,14
+5162;Rhein-Kreis Neuss;Landkreis;2033,8;3,14
 5166;Viersen;Landkreis;1864,68;3,28
 5170;Wesel;Landkreis;1787,06;3,87
 5314;Bonn, Stadt;kreisfreie Stadt;1874,82;2,87
@@ -85,17 +84,17 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 5358;Düren;Landkreis;1713,29;3,84
 5362;Rhein-Erft-Kreis;Landkreis;1826,28;3,38
 5366;Euskirchen;Landkreis;1772,73;4,02
-5370;Heinsberg;Landkreis;1663,90;3,79
+5370;Heinsberg;Landkreis;1663,9;3,79
 5374;Oberbergischer Kreis;Landkreis;1876,59;3,46
 5378;Rheinisch-Bergischer Kreis;Landkreis;2119,36;3,14
 5382;Rhein-Sieg-Kreis;Landkreis;1927,26;3,16
 5512;Bottrop, Stadt;kreisfreie Stadt;1635,64;4,74
-5513;Gelsenkirchen, Stadt;kreisfreie Stadt;1332,60;4,79
+5513;Gelsenkirchen, Stadt;kreisfreie Stadt;1332,6;4,79
 5515;Münster, Stadt;kreisfreie Stadt;1879,34;2,46
-5554;Borken;Landkreis;1826,70;2,89
+5554;Borken;Landkreis;1826,7;2,89
 5558;Coesfeld;Landkreis;1953,57;3,16
 5562;Recklinghausen;Landkreis;1642,44;4,31
-5566;Steinfurt;Landkreis;1817,30;3,44
+5566;Steinfurt;Landkreis;1817,3;3,44
 5570;Warendorf;Landkreis;1918,59;3,34
 5711;Bielefeld, Stadt;kreisfreie Stadt;1781,67;3,44
 5754;Gütersloh;Landkreis;2001,32;2,97
@@ -117,10 +116,10 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 5974;Soest;Landkreis;1836,62;3,82
 5978;Unna;Landkreis;1736,05;3,93
 6411;Darmstadt, Stadt;kreisfreie Stadt;1911,79;2,63
-6412;Frankfurt am Main, Stadt;kreisfreie Stadt;1879,50;2,87
+6412;Frankfurt am Main, Stadt;kreisfreie Stadt;1879,5;2,87
 6413;Offenbach am Main, Stadt;kreisfreie Stadt;1545,58;3,18
 6414;Wiesbaden, Stadt;kreisfreie Stadt;2016,07;3,45
-6431;Bergstraße;Landkreis;2006,50;3,35
+6431;Bergstraße;Landkreis;2006,5;3,35
 6432;Darmstadt-Dieburg;Landkreis;1997,51;3,01
 6433;Groß-Gerau;Landkreis;1821,21;2,89
 6434;Hochtaunuskreis;Landkreis;2770,86;2,68
@@ -129,11 +128,11 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 6437;Odenwaldkreis;Landkreis;1791,38;3,8
 6438;Offenbach;Landkreis;2009,25;2,9
 6439;Rheingau-Taunus-Kreis;Landkreis;2079,42;3,09
-6440;Wetteraukreis;Landkreis;1974,30;3,63
-6531;Gießen;Landkreis;1724,10;3,51
+6440;Wetteraukreis;Landkreis;1974,3;3,63
+6531;Gießen;Landkreis;1724,1;3,51
 6532;Lahn-Dill-Kreis;Landkreis;1919,14;4
 6533;Limburg-Weilburg;Landkreis;1843,09;3,74
-6534;Marburg-Biedenkopf;Landkreis;1735,90;3,28
+6534;Marburg-Biedenkopf;Landkreis;1735,9;3,28
 6535;Vogelsbergkreis;Landkreis;1763,98;4,07
 6611;Kassel, Stadt;kreisfreie Stadt;1601,69;3,65
 6631;Fulda;Landkreis;1869,44;2,98
@@ -143,7 +142,7 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 6635;Waldeck-Frankenberg;Landkreis;1841,92;3,8
 6636;Werra-Meißner-Kreis;Landkreis;1675,92;3,96
 7111;Koblenz, Stadt;kreisfreie Stadt;1764,66;3,34
-7131;Ahrweiler;Landkreis;1935,50;3,95
+7131;Ahrweiler;Landkreis;1935,5;3,95
 7132;Altenkirchen (Westerwald);Landkreis;1789,62;4,23
 7133;Bad Kreuznach;Landkreis;1808,05;4,23
 7134;Birkenfeld;Landkreis;1768,98;5,13
@@ -160,7 +159,7 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 7235;Trier-Saarburg;Landkreis;1877,81;3,32
 7311;Frankenthal (Pfalz), Stadt;kreisfreie Stadt;1776,25;3,75
 7312;Kaiserslautern, Stadt;kreisfreie Stadt;1562,96;3,57
-7313;Landau in der Pfalz, Stadt;kreisfreie Stadt;1791,30;2,85
+7313;Landau in der Pfalz, Stadt;kreisfreie Stadt;1791,3;2,85
 7314;Ludwigshafen am Rhein, Stadt;kreisfreie Stadt;1620,88;3,89
 7315;Mainz, Stadt;kreisfreie Stadt;1830,69;2,76
 7316;Neustadt an der Weinstraße, Stadt;kreisfreie Stadt;2096,75;3,81
@@ -195,7 +194,7 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 8212;Karlsruhe, Stadt;kreisfreie Stadt;1828,78;2,84
 8215;Karlsruhe;Landkreis;1974,74;2,98
 8216;Rastatt;Landkreis;1922,25;3,59
-8221;Heidelberg, Stadt;kreisfreie Stadt;1910,20;2,33
+8221;Heidelberg, Stadt;kreisfreie Stadt;1910,2;2,33
 8222;Mannheim, Stadt;kreisfreie Stadt;1781,57;3,68
 8225;Neckar-Odenwald-Kreis;Landkreis;1823,63;3,85
 8226;Rhein-Neckar-Kreis;Landkreis;2024,57;3,1
@@ -216,7 +215,7 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 8415;Reutlingen;Landkreis;2015,95;3,19
 8416;Tübingen;Landkreis;1922,13;2,36
 8417;Zollernalbkreis;Landkreis;2079,35;3,2
-8421;Ulm, Stadt;kreisfreie Stadt;2295,90;2,45
+8421;Ulm, Stadt;kreisfreie Stadt;2295,9;2,45
 8425;Alb-Donau-Kreis;Landkreis;1932,64;2,98
 8426;Biberach;Landkreis;1977,01;2,85
 8435;Bodenseekreis;Landkreis;2147,92;2,61
@@ -231,7 +230,7 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 9174;Dachau;Landkreis;2105,07;2,48
 9175;Ebersberg;Landkreis;2287,31;2,05
 9176;Eichstätt;Landkreis;1983,05;2,61
-9177;Erding;Landkreis;2083,20;2,73
+9177;Erding;Landkreis;2083,2;2,73
 9178;Freising;Landkreis;1996,59;2,51
 9179;Fürstenfeldbruck;Landkreis;2146,97;2,16
 9180;Garmisch-Partenkirchen;Landkreis;2094,81;3,59
@@ -250,14 +249,14 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 9263;Straubing, Stadt;kreisfreie Stadt;1987,82;4,57
 9271;Deggendorf;Landkreis;1949,25;3,27
 9272;Freyung-Grafenau;Landkreis;1768,06;3,83
-9273;Kelheim;Landkreis;1936,90;2,95
+9273;Kelheim;Landkreis;1936,9;2,95
 9274;Landshut;Landkreis;2002,28;2,5
 9275;Passau;Landkreis;1833,58;3,47
 9276;Regen;Landkreis;1767,67;4,15
 9277;Rottal-Inn;Landkreis;1928,19;3,2
 9278;Straubing-Bogen;Landkreis;1950,14;2,95
 9279;Dingolfing-Landau;Landkreis;2009,24;2,92
-9361;Amberg, Stadt;kreisfreie Stadt;1829,80;5,01
+9361;Amberg, Stadt;kreisfreie Stadt;1829,8;5,01
 9362;Regensburg, Stadt;kreisfreie Stadt;1867,89;2,71
 9363;Weiden i.d.OPf., Stadt;kreisfreie Stadt;1793,94;3,64
 9371;Amberg-Sulzbach;Landkreis;1879,68;4,03
@@ -267,24 +266,24 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 9375;Regensburg;Landkreis;1991,47;3,24
 9376;Schwandorf;Landkreis;1812,95;3,4
 9377;Tirschenreuth;Landkreis;1845,24;4,15
-9461;Bamberg, Stadt;kreisfreie Stadt;1811,80;3,3
+9461;Bamberg, Stadt;kreisfreie Stadt;1811,8;3,3
 9462;Bayreuth, Stadt;kreisfreie Stadt;1721,17;3,1
 9463;Coburg, Stadt;kreisfreie Stadt;2039,47;4,73
 9464;Hof, Stadt;kreisfreie Stadt;1660,34;5,25
 9471;Bamberg;Landkreis;1874,98;3,13
-9472;Bayreuth;Landkreis;1845,60;3,68
+9472;Bayreuth;Landkreis;1845,6;3,68
 9473;Coburg;Landkreis;2100,73;4,32
 9474;Forchheim;Landkreis;1997,71;3,4
 9475;Hof;Landkreis;1814,77;4,79
 9476;Kronach;Landkreis;1877,98;4,39
 9477;Kulmbach;Landkreis;1925,22;4,78
 9478;Lichtenfels;Landkreis;1896,41;4,54
-9479;Wunsiedel i.Fichtelgebirge;Landkreis;1867,00;5,59
+9479;Wunsiedel i.Fichtelgebirge;Landkreis;1867;5,59
 9561;Ansbach, Stadt;kreisfreie Stadt;1777,41;3,93
 9562;Erlangen, Stadt;kreisfreie Stadt;2048,66;2,98
 9563;Fürth, Stadt;kreisfreie Stadt;1969,09;3,49
 9564;Nürnberg, Stadt;kreisfreie Stadt;1855,05;3,64
-9565;Schwabach, Stadt;kreisfreie Stadt;2154,20;3,63
+9565;Schwabach, Stadt;kreisfreie Stadt;2154,2;3,63
 9571;Ansbach;Landkreis;1967,96;3,04
 9572;Erlangen-Höchstadt;Landkreis;2143,13;3,21
 9573;Fürth;Landkreis;2108,09;3
@@ -310,9 +309,9 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 9764;Memmingen, Stadt;kreisfreie Stadt;2301,45;3,83
 9771;Aichach-Friedberg;Landkreis;2166,11;2,61
 9772;Augsburg;Landkreis;2099,67;2,71
-9773;Dillingen a.d.Donau;Landkreis;2023,90;3,13
+9773;Dillingen a.d.Donau;Landkreis;2023,9;3,13
 9774;Günzburg;Landkreis;2011,97;3
-9775;Neu-Ulm;Landkreis;2010,00;3,03
+9775;Neu-Ulm;Landkreis;2010;3,03
 9776;Lindau (Bodensee);Landkreis;2171,45;3,24
 9777;Ostallgäu;Landkreis;1997,15;3,04
 9778;Unterallgäu;Landkreis;2070,01;3,01
@@ -321,16 +320,16 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 10041;Regionalverband Saarbrücken;Landkreis;1618,89;4,68
 10042;Merzig-Wadern;Landkreis;1568,41;4,54
 10043;Neunkirchen;Landkreis;1662,94;5,04
-10044;Saarlouis;Landkreis;1727,50;4,56
+10044;Saarlouis;Landkreis;1727,5;4,56
 10045;Saarpfalz-Kreis;Landkreis;1908,54;4,07
 10046;St. Wendel;Landkreis;1788,52;4,22
 11000;Berlin, Stadt;kreisfreie Stadt;1674,32;3,43
 12051;Brandenburg an der Havel, Stadt;kreisfreie Stadt;1519,05;5,43
 12052;Cottbus, Stadt;kreisfreie Stadt;1539,04;5,4
-12053;Frankfurt (Oder), Stadt;kreisfreie Stadt;1472,30;5,19
+12053;Frankfurt (Oder), Stadt;kreisfreie Stadt;1472,3;5,19
 12054;Potsdam, Stadt;kreisfreie Stadt;1773,07;3,33
 12060;Barnim;Landkreis;1697,85;4,84
-12061;Dahme-Spreewald;Landkreis;1750,70;4,22
+12061;Dahme-Spreewald;Landkreis;1750,7;4,22
 12062;Elbe-Elster;Landkreis;1560,97;5,77
 12063;Havelland;Landkreis;1690,22;4,35
 12064;Märkisch-Oderland;Landkreis;1693,98;4,57
@@ -349,24 +348,24 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 13072;Landkreis Rostock;Landkreis;1669,15;5,3
 13073;Vorpommern-Rügen;Landkreis;1598,09;5,9
 13074;Nordwestmecklenburg;Landkreis;1615,53;4,88
-13075;Vorpommern-Greifswald;Landkreis;1510,40;5,99
-13076;Ludwigslust-Parchim;Landkreis;1669,20;5,04
+13075;Vorpommern-Greifswald;Landkreis;1510,4;5,99
+13076;Ludwigslust-Parchim;Landkreis;1669,2;5,04
 14511;Chemnitz, Stadt;kreisfreie Stadt;1643,35;4,46
 14521;Erzgebirgskreis;Landkreis;1654,74;5,15
 14522;Mittelsachsen;Landkreis;1661,39;4,61
 14523;Vogtlandkreis;Landkreis;1652,78;5,46
 14524;Zwickau;Landkreis;1692,89;5,13
-14612;Dresden, Stadt;kreisfreie Stadt;1634,30;2,91
+14612;Dresden, Stadt;kreisfreie Stadt;1634,3;2,91
 14625;Bautzen;Landkreis;1670,49;4,71
 14626;Görlitz;Landkreis;1566,82;5,83
 14627;Meißen;Landkreis;1723,51;4,29
 14628;Sächsische Schweiz-Osterzgebirge;Landkreis;1697,66;4,76
-14713;Leipzig, Stadt;kreisfreie Stadt;1558,70;3,69
+14713;Leipzig, Stadt;kreisfreie Stadt;1558,7;3,69
 14729;Leipzig;Landkreis;1764,23;5,05
 14730;Nordsachsen;Landkreis;1667,92;5,2
-15001;Dessau-Roßlau, Stadt;kreisfreie Stadt;1618,50;6,48
+15001;Dessau-Roßlau, Stadt;kreisfreie Stadt;1618,5;6,48
 15002;Halle (Saale), Stadt;kreisfreie Stadt;1466,22;4,86
-15003;Magdeburg, Stadt;kreisfreie Stadt;1552,90;4,17
+15003;Magdeburg, Stadt;kreisfreie Stadt;1552,9;4,17
 15081;Altmarkkreis Salzwedel;Landkreis;1654,29;5,37
 15082;Anhalt-Bitterfeld;Landkreis;1619,58;5,95
 15083;Börde;Landkreis;1709,49;5,63
@@ -383,13 +382,13 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 16053;Jena, Stadt;kreisfreie Stadt;1567,28;2,83
 16054;Suhl, Stadt;kreisfreie Stadt;1654,33;6,15
 16055;Weimar, Stadt;kreisfreie Stadt;1572,18;4,14
-16056;Eisenach, Stadt;kreisfreie Stadt;1600,00;4,51
+16056;Eisenach, Stadt;kreisfreie Stadt;1600;4,51
 16061;Eichsfeld;Landkreis;1649,03;3,85
 16062;Nordhausen;Landkreis;1542,64;5,03
 16063;Wartburgkreis;Landkreis;1757,66;5
 16064;Unstrut-Hainich-Kreis;Landkreis;1557,08;5,1
 16065;Kyffhäuserkreis;Landkreis;1520,15;6,23
-16066;Schmalkalden-Meiningen;Landkreis;1637,70;5,05
+16066;Schmalkalden-Meiningen;Landkreis;1637,7;5,05
 16067;Gotha;Landkreis;1603,05;5,09
 16068;Sömmerda;Landkreis;1591,68;4,76
 16069;Hildburghausen;Landkreis;1674,15;5,09
@@ -400,4 +399,4 @@ Nr.;Kreis/Region;Aggregat;HE;vSM
 16074;Saale-Holzland-Kreis;Landkreis;1654,15;4,26
 16075;Saale-Orla-Kreis;Landkreis;1626,09;5,38
 16076;Greiz;Landkreis;1665,67;4,87
-16077;Altenburger Land;Landkreis;1622,70;5,44
+16077;Altenburger Land;Landkreis;1622,7;5,44
