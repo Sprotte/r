@@ -22,7 +22,7 @@ library(ggrepel)
 
 # Einlesen der csv-Tabelle
 
-Tabelle <- readr::read_lines("C:/Users/Philipp Jens/Desktop/r_test/Data/903252.csv")
+Tabelle <- readr::read_lines("Data/903252.csv")
 
 # Bearbeiten der Tabelle
 
@@ -202,14 +202,14 @@ summary(Regressionsmodell)                                                      
 #5. Verknüpfung mit Geometriedaten----
 # Einlesen der Excel-Datei
 kreise_xls <- readxl::read_excel("./Data/Kreisgrenzen/VG250_Kreisgrenzen.xlsx",
-                                 skip = 2,                                                                                        
+                                 skip = 1,                                                                                        
                                  sheet = 1,                                                                                       
                                  col_names = T) 
 c( "krs17", "krs17name")
 
 
 
-Gemeinde_sf <- sf::st_read("./Data/Kreisgrenzen/VZ250_GEM.shp")
+Gemeinde_sf <- sf::st_read("./Data/Kreisgrenzen/VG250_KRS_2021.shp")
 
 tmap_mode("plot")
 
@@ -217,12 +217,11 @@ tm_shape(Gemeinde_sf) + tm_borders()
 
 View(Gemeinde_sf)
 
-View(st_drop_geometry(Gemeinde_sf))
 
-Kreis_sf <- summarize( group_by( Gemeinde_sf, ARS_K, GEN_K))
+Kreis_sf <- summarize( group_by( Gemeinde_sf, ARS, GEN))
 
 Kreis_sf <- Gemeinde_sf %>%                                                 # Eingangsdaten übergeben an
-  dplyr::group_by( ARS_K, GEN_K) %>%                              # Gruppierung ... übergeben an
+  dplyr::group_by( ARS, GEN) %>%                              # Gruppierung ... übergeben an
   dplyr::summarize(Gemeinden = n())                               # Zusammenfassung ... übergeben an <-
 
 saveRDS( Kreis_sf, "Kreise_sf.rds")
@@ -234,18 +233,17 @@ tmap_mode("view")
 tm_shape( Kreis_sf) + tm_borders()                            # Anzeigen der Grenzen
 
 Land_sf <- Gemeinde_sf %>%                                    # Eingangsdaten übergeben an
-  dplyr::group_by( ARS_L, GEN_L) %>%                          # Gruppierung ... übergeben an
+  dplyr::group_by( ARS, GEN) %>%                          # Gruppierung ... übergeben an
   dplyr::summarize(Gemeinden = n())                           # Zusammenfassung ... übergeben an <-
 
 tm_shape( Land_sf) + tm_borders()
 
 Kreisdata_sf <- merge( x = Kreis_sf,
                        y = df,
-                       by.x = "ARS_K",
+                       by.x =  "ARS",
                        by.y = "Nr.")
-
 saveRDS( Kreisdata_sf, "Kreisdata_sf.rds")
 
 head( Kreisdata_sf)
 
-tm_shape( Kreisdata_sf) 
+tm_shape( Kreisdata_sf) + tm_fill(c("HE","vSM"))
