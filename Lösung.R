@@ -216,6 +216,8 @@ Kreis_sf <- Gemeinde_sf %>%                                                 # Ei
 
 saveRDS( Kreis_sf, "Kreise_sf.rds")
 
+
+
 tmap_mode("view")
 
 tm_shape( Kreis_sf) + tm_borders()                            # Anzeigen der Grenzen
