@@ -22,7 +22,7 @@ library(ggrepel)
 
 # Einlesen der csv-Tabelle
 
-Tabelle <- readr::read_lines("Data/903252.csv")
+Tabelle <- readr::read_lines("./DData/903252.xlsx")
 
 # Bearbeiten der Tabelle
 
@@ -205,9 +205,6 @@ kreise_xls <- readxl::read_excel("./Data/Kreisgrenzen/VG250_Kreisgrenzen.xlsx",
                                  skip = 1,                                                                                        
                                  sheet = 1,                                                                                       
                                  col_names = T) 
-c( "krs17", "krs17name")
-
-
 
 Gemeinde_sf <- sf::st_read("./Data/Kreisgrenzen/VG250_KRS_2021.shp")
 
@@ -217,7 +214,6 @@ tm_shape(Gemeinde_sf) + tm_borders()
 
 View(Gemeinde_sf)
 
-
 Kreis_sf <- summarize( group_by( Gemeinde_sf, ARS, GEN))
 
 Kreis_sf <- Gemeinde_sf %>%                                                 # Eingangsdaten übergeben an
@@ -225,8 +221,6 @@ Kreis_sf <- Gemeinde_sf %>%                                                 # Ei
   dplyr::summarize(Gemeinden = n())                               # Zusammenfassung ... übergeben an <-
 
 saveRDS( Kreis_sf, "Kreise_sf.rds")
-
-
 
 tmap_mode("view")
 
