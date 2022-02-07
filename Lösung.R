@@ -14,12 +14,15 @@ library(sp)                                   # räuml. Daten
 library(sf)                                   # shape-Dateien einlesen
 library(raster)                               # Datenaquise
 library(tmap)                                 # zum Erstellen von thematischen Karten
-library(ggrepel)                              # package zur vermeidung von überlappenden Beschriftunge
+library(ggrepel)      
+
+
+# package zur vermeidung von überlappenden Beschriftunge
 # 1. Daten einlesen und als dataframe konvertieren (Aufgabe 1)
 
 # Einlesen der csv-Tabelle
 
-Tabelle <- readr::read_lines("./Data/HE_vSM.csv")
+Tabelle <- readr::read_lines("C:/Users/Philipp Jens/Desktop/r_test/Data/903252.csv")
 
 # Bearbeiten der Tabelle
 
@@ -96,22 +99,23 @@ ggplot(df, aes(x= vSM)) +
   theme(axis.line = element_line(colour = 'black', size = 1, linetype = 'solid'))
 
 # Säulendiagramm Einkommenssteuer in Euro je Einwohner
-
 Sturges_HE <- nclass.Sturges(df$HE)
-ggplot2::ggplot( data = df, aes( x = HE)) + 
-  geom_bar(colour = 'black', fill = 'blueviolet', width = 100) +                                    # Säulendiagramm; Säulenbreite 0.5
-  geom_text(stat = 'count', aes(label= ..count..), vjust= -100) +                                   # Darstellung der Häufigkeitswerte über den Säulen
-  xlab("Haushaltseinkommen je Einwohner in € (2017)") +
-  scale_x_continuous(limits = c(1300,3500),                                                              # X-Achsen-limits
-                     breaks = c(1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500,2600,2700,2800,2900,3000,3100,3200,3300,3400,3500),                                    # Positionen auf X-Achse
-                     labels = c("1300","1400","1500","1600","1700","1800","1900","2000","2100","2200","2300","2400","2500","2600","2700","2800","2900","3000","3100","3200","3300","3400","3500")) +   # Beschriftung der X-Achsenskala
-  geom_vline( aes( xintercept= median(HE), color = "median"), linetype= 'dashed', size= 4,) +                                
-  geom_vline(aes(xintercept = mean(HE), color = 'mean'), linetype= 'dashed', size = 4,  ) +
-  scale_color_manual(name = "Legende", values = c(median = "red", mean = "blue")) +
-  ylab("Vorkommen in den Landkreisen (absolute Häufigkeit)") +
-  theme(axis.line = element_line(colour = 'black', size = 1, linetype = 'solid')) +                 # Achsenlinien; Farbe, Größe und Linientyp
-  ggtitle("Häufigkeitsverteilung vorzeitige Sterblichkeit Männer") +  
-  theme_bw() + theme(plot.title = element_text(size=11, face = "bold", hjust = 0.5)) 
+ggplot2::ggplot(data = df,                                                                         # Datentabelle festlegen
+                aes(x= HE)) +                                                              # Daten aus genannter Spalte für x-Achse
+  geom_histogram(bins = Sturges_HE,                                                        # Histogramm mit Klassenanzahl nach Sturges
+                 color ='black',                                                                   # Farbe der Umrandung
+                 fill = 'aquamarine') +                                                            # Füllfarbe
+  stat_bin(aes(label=..count..), vjust= -0.5,                                                      # hinzufügen von Häufigkeitswerten
+           geom = 'text', position = 'identity', bins= Sturges_HE) +                       # Angabe der Klassenzahl notwendig
+  xlab("Anteil Ausländer der Empfänger von Lebensunterhalthilfe pro 1000 E. 2017") +               # x-Achsenbeschriftung
+  scale_x_continuous(breaks = c(1250,1500,1750,2000,2250,2500,2750,3000,3250,3500)) +                         # X-Achse Skala festlegen
+  ggtitle("Häufigkeitsverteilung des Ausländeranteils von Empfängern von Lebensunterhalthilfe") +  # Diagrammtitel
+  theme_bw() +                                                                                     # Hintergrund weiß mit schwarzem Raster
+  theme(plot.title = element_text(size=11, face = "bold")) +                                       # Titelschriftgröße und fettgedruckt
+  ylab("Vorkommen in den Landkreisen (absolute Häufigkeit)") +  
+  scale_y_continuous(labels = scales::percent_format(scale = 1))
+  theme(axis.line = element_line(colour = 'black', size = 1, linetype = 'solid'),                  # Achsenlinien; Farbe, Größe und Linientyp
+        plot.title = element_text(hjust = 0.5, size = 10, face = 'bold'))                          # Überschrift, Position, Größe, fettgedruckt
 
 # Kreisdiagramm
 
@@ -163,11 +167,18 @@ boxplot(df_vSM_no_outliners$vSM, main="Vorzeitige Sterblichkeit Männer (Todesf�
 df_no_outliners <- df_he_no_outliners[-c(which(df_he_no_outliners$vSM %in% outliers_vSM)),]
 
 ggplot(df_no_outliners) + geom_point(aes(HE, vSM)) +                                      # Erstellen Streudiagramm
-  xlab("Haushaltseinkommen 2017 (€)") +
+  xlab("Haushaltseinkommen 2017 (€)") +theme_bw() +
+  theme(axis.line = element_line(colour = 'black', size = 1, linetype = 'solid'),                  # Achsenlinien; Farbe, Größe und Linientyp
+        plot.title = element_text(hjust = 0.5, size = 10, face = 'bold'))                          # Überschrift, Position, Größe, fettgedruckt
+
+
   ylab("Vorzeitige Sterblichkeit (Todesfälle pro 1000 EW bei unter 70 Jahren)") +
   scale_x_continuous(breaks = c(0,100,200,300,400,500,600,700,800,900,1000)) +
   scale_y_continuous(breaks = c(0,1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,3.0)) +
-  theme_bw()
+  theme_bw() +
+theme(axis.line = element_line(colour = 'black', size = 1, linetype = 'solid'),                  # Achsenlinien; Farbe, Größe und Linientyp
+      plot.title = element_text(hjust = 0.5, size = 10, face = 'bold'))                          # Überschrift, Position, Größe, fettgedruckt
+
 
 #4. Regression----
 
@@ -198,7 +209,7 @@ c( "krs17", "krs17name")
 
 
 
-Gemeinde_sf <- sf::st_read("./Data/Kreisgrenzen/Kreisgrenzen/Kreisgrenzen_neu/vz250_0101/VZ250_GEM.shp")
+Gemeinde_sf <- sf::st_read("./Data/Kreisgrenzen/VZ250_GEM.shp")
 
 tmap_mode("plot")
 
